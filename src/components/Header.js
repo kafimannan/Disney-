@@ -68,15 +68,27 @@ img{
 span{
     font-size: 13px;
     latter-spacing: 1.42px;
-    position: relative:
+    position: relative;
     &:after {
-  content: "dsd";
+  content: "";
   height: 2px;
   background: white;
   position: absolute;
   left: 0;
   right: 0;
   bottom: -6px;
+  /*
+  opacity: 0;
+  transform-origin: left center;
+    transform: scaleX(0);*/
+  
+}
+ /***&:hover {
+    span:after {
+        transform:scaleX(1);
+        opacity: 1;
+    }
+    ***/
 }
     
 }
