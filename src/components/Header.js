@@ -42,64 +42,55 @@ function Header()
 export default Header
 
 const Nav = styled.nav`
-height :70px;
-background: #090b13;
-display: flex;
-align-items: center;
-padding: 0 36px;
+    height :70px;
+    background: #090b13;
+    display: flex;
+    align-items: center;
+    padding: 0 36px;
 `
 const Logo = styled.img`
-width:80px; 
+    width:80px; 
 `
 const NavMennu = styled.div`
-   display: flex;
-flex: 1;
-margin-l: 25px;
-align-items: center;
-
-a{
     display: flex;
-align-items: center;
-padding: 0 12px;
-cursor: pointer;
-img{
-    height:20px;
-}
-span{
-    font-size: 13px;
-    latter-spacing: 1.42px;
-    position: relative;
-    &:after {
-  content: "";
-  height: 2px;
-  background: white;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -6px;
-  /*
-  opacity: 0;
-  transform-origin: left center;
-    transform: scaleX(0);*/
-  
-}
- /***&:hover {
-    span:after {
-        transform:scaleX(1);
-        opacity: 1;
-    }
-    ***/
-}
-    
-}
-
-
-}
-`
+    flex: 1;
+    margin-l: 25px;
+    align-items: center;
+        a{
+            display: flex;
+            align-items: center;
+            padding: 0 12px;
+            cursor: pointer;
+            img{
+                height:20px;
+            }
+            span{
+                font-size: 13px;
+                latter-spacing: 1.42px;
+                position: relative;
+                &:after {
+                    content: "";
+                    height: 2px;
+                    background: white;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: -6px;
+                    opacity: 0.2;
+                    transform
+                    transform: scaleX(0);                 
+                        }
+                }
+                &:hover {
+                        span:after {
+                            transform:scaleX(1);
+                            opacity: 1;
+                                    }                        
+                            }
+        }`
 const UserImg = styled.img`
 width: 48px;
 height: 48px;
 border-radius: 50%;
 cursor: pointer;
 `
-
